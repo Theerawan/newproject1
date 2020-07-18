@@ -16,3 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/user/{name}/', function ($name) {
+    return "สวัสดี $name";
+});
+Route ::get("/บวกเลข/{num1}/{num2}", function ($num1, $num2){
+    return $num1 + $num2;
+});
+
+Route ::get("/showdetail/{name}/{age}/{text}", function ($name, $age, $text){
+    return"สวัสดี, $name คุณมีอายุ $age ปี และคุณพูดว่า '$text'";
+});
