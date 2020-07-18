@@ -35,3 +35,7 @@ Route::get('/บวกเลข/{number1}/{number2}/{number3}', 'HomeController@
 Route::get('/', 'UserController@index');
 Route::get('/show/{id1}', 'UserController@show');
 Route::get('/user/update/{id}' , 'UserController@update');
+
+Route::get('/todo', 'TodoController@index');
+Route::get('/todo/show/{id}', 'TodoController@show');
+Route::get('/todo/delete/{id}', 'TodoController@delete');
